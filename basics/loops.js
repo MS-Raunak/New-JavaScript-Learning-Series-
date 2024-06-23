@@ -26,10 +26,10 @@
 // }
 
 //for..in loop: it is iterate enumrable properties of an object
-const person = {name: "Chhaya", age:30};
-for (const key in person) {
-    console.log(key, "=" ,person[key]);
-}
+// const person = {name: "Chhaya", age:30};
+// for (const key in person) {
+//     console.log(key, "=" ,person[key]);
+// }
 
 /**
  * Choosing the Right Loop:
@@ -57,3 +57,20 @@ Differentiate 	for...of	for...in
 - for...in: Iterates over all enumerable properties, including those inherited from the prototype chain. This can sometimes lead to unexpected behavior if you're not careful. 
  */
 
+/*break and continue:
+===================
+break keywordnis used to terminate the loop and jump the control outside of loop
+continu keyword is used to skip the current iteration and jump to the next iteration
+*/
+//print till 3
+// for (let i = 1; i <= 5; i++) {
+//     if(i>3) break;
+//     console.log(i);
+// }
+// console.log("break executed..");
+
+//print till 5 by skipping 3
+for (let i = 1; i <= 5; i++) {
+    if(i==3) continue;
+    console.log(i);
+}
