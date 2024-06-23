@@ -4,6 +4,7 @@ console.log("Given Array:", arr);
 //console.log(arr.length); 
 
 //Basic Inbuilt Functions##############################
+
 //push():- used to insert one or multiple element at the ending index of given array
 arr.push(60,70);
 console.log("Array after adding some elements at the last: ", arr);
@@ -18,5 +19,4 @@ console.log("Array after removing first ele from last", arr);
 
 //unshift(): used to insert one or multiple element at the beginning index of given array
 arr.unshift(0,1)
-console.log("Array after adding some elements at the beginning: ", arr);
-
+console.log("Array after adding some elements at the last: ", arr);
