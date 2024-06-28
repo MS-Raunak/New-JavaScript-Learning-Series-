@@ -10,7 +10,7 @@
     
         <h2 id="title" class="first-title">DOM</h2>
         <div id="box">
-            <h2 id="welcome">Welcome <span>Guys</span></h2>
+            <h2 id="welcome">Welcome <span style="display: none;">Guys</span></h2>
         </div>
     
 
@@ -23,8 +23,10 @@
         //console.log(firstTitle); //h2 element with class first-title
 
         const welcome = document.getElementById('welcome');
-        //innerText: used to display content only from given id
-        console.log(welcome.innerText); //Welcome guys
+        //textContent: used to display all visible/non-visible content
+        console.log(welcome.textContent);////Welcome guys
+        //innerText: used to display only visible content from given id
+        console.log(welcome.innerText); //Welcome 
         //innerHTML: used to display content along with element from given id
         console.log(welcome.innerHTML); //Welcome<span>Guys</span>
     </script>
