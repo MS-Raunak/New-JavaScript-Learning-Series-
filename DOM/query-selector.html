@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>QUERY SELECTOR</h1>
+    <h2>Hello</h2>
+    <h2>Hi</h2>
+    <p id="query" class="qry">Welcome Guys</p>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+
+    <script>
+        //querySelector()
+        const query = document.querySelector('#query');
+        console.log(query.innerText); //Welcome Guys
+        const qry = document.querySelector('.qry');
+        console.log(qry.innerText);//Welcome Guys
+        const h2 = document.querySelector('h2'); //target first h2 tag only
+        console.log(h2.innerText);
+
+        //querySelectorAll(): return nodelist
+        const list = document.querySelectorAll('li');
+        console.log(list);//NodeList(3) [li, li, li]
+        list.forEach(node=> console.log(node.innerText))//one two three
+
+    </script>
+</body>
+</html>
