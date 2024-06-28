@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Style</title>
+</head>
+<body>
+    <h1>DOM CSS STYLE</h1>
+    <h2 id="title">Welcome Guys!</h2>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <script>
+        const title = document.querySelector('#title');
+        title.style.color='red'
+
+        const list = document.querySelectorAll('li');
+        list.forEach(node=> {
+            node.style.color='blue';
+            node.style.backgroundColor='orange';
+            node.style.padding='10px'
+        })
+    </script>
+</body>
+</html>
