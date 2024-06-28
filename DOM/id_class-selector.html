@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Learning Document Object Module(DOM)</h1>
+    
+        <h2 id="title" class="first-title">DOM</h2>
+        <div id="box">
+            <h2 id="welcome">Welcome <span>Guys</span></h2>
+        </div>
+    
+
+    <script>
+        //ID SECLECTOR
+        const id = document.getElementById('title');
+        //console.log(id);//h2 element with id title
+        //CLASS SELECTOR
+        const firstTitle = document.getElementsByClassName('first-title');
+        //console.log(firstTitle); //h2 element with class first-title
+
+        const welcome = document.getElementById('welcome');
+        //innerText: used to display content only from given id
+        console.log(welcome.innerText); //Welcome guys
+        //innerHTML: used to display content along with element from given id
+        console.log(welcome.innerHTML); //Welcome<span>Guys</span>
+    </script>
+</body>
+</html>
