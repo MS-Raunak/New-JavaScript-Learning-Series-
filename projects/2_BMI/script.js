@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const form = document.querySelector('form');
 
 
@@ -8,6 +9,16 @@ form.addEventListener('submit', e => {
     const height = parseInt(document.querySelector('#height').value);
     const weight = parseInt(document.querySelector('#weight').value);
     const result = document.querySelector('p')
+=======
+const box = document.querySelector('.box');
+
+const btn = document.querySelector('#btn');
+const result = document.querySelector('p');
+
+btn.addEventListener('click', e => {
+    const height = parseInt(document.querySelector('#height').value);
+    const weight = parseInt(document.querySelector('#weight').value);
+>>>>>>> 182c655a92e400aa60f04f348676b3259124ee36
 
     const bmi = weight / height;
     
@@ -29,6 +40,10 @@ form.addEventListener('submit', e => {
         result.style.color = 'red'
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 182c655a92e400aa60f04f348676b3259124ee36
 })
 
 
