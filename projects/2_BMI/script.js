@@ -1,11 +1,13 @@
-const box = document.querySelector('.box');
+const form = document.querySelector('form');
 
-const btn = document.querySelector('#btn');
-const result = document.querySelector('p');
 
-btn.addEventListener('click', e => {
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    //console.log("clicked");
+
     const height = parseInt(document.querySelector('#height').value);
     const weight = parseInt(document.querySelector('#weight').value);
+    const result = document.querySelector('p')
 
     const bmi = weight / height;
     
@@ -26,7 +28,6 @@ btn.addEventListener('click', e => {
         result.innerText = `Overweight: ${bmi}`
         result.style.color = 'red'
     }
-
 
 })
 
