@@ -87,13 +87,11 @@ msg(function() {
 
 
 /**
- * when msg() called then setTimeOut() executed which pushes callback into the event queue
- * so he synchronous code first will get executed and once after the  all asynchronous code will
- * get executed sequentially one after another
  * So expected output,
  * ===================
- * Program ends
+ * 
     fun-1
     fun-2
     fun-3
+    Program ends
  */
