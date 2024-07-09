@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        .container{
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+        button{
+            padding: 10px;
+            background-color: blue;
+            color: #fff;
+            font-size: 1rem;
+            border-radius: 7px;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Counter: <span>0</span></h1>
+        <button>Increase+</button>
+        <button>Clear</button>
+        <button>Decrease-</button>
+    </div>
+
+    <!-- script code -->
+     <script>
+        let buttons = document.querySelectorAll('button');
+        let result = document.querySelector('span');
+        let arrBtn = Array.from(buttons);
+
+        let count=0;
+
+        arrBtn.forEach(btn=> {
+            btn.addEventListener('click', (event)=> {
+                if (event.target.innerHTML=='Increase+') {
+                    count=count+1;
+                    result.innerHTML = count;
+                }
+                if (event.target.innerHTML=='Decrease-') {
+                    if(count<=0) return;
+                    count=count-1;
+                    result.innerHTML = count;
+                }
+                if(event.target.innerHTML=='Clear'){
+                    count=0;
+                    result.innerHTML = count;
+                }
+                
+            })
+        })
+     </script>
+    
+</body>
+</html>
