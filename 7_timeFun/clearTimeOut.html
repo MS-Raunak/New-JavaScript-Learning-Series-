@@ -1,0 +1,53 @@
+<!-- 
+ clearTimeOut is a function which takes reference of 
+ setTimeOut() function and clear the execution time
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Clear Interval</title>
+</head>
+<style>
+   button {
+      padding: 10px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-family: sans-serif;
+      cursor: pointer;
+   }
+</style>
+
+<body>
+   <button id="btn">Click Me Before 2s</button>
+
+   <!-- script -->
+   <script>
+      let btn = document.getElementById('btn');
+      let isClickable = true;
+
+      const timeOut = setTimeout(() => {
+         btn.innerHTML = "Mai Binod!"
+         btn.style.backgroundColor = 'rgb(162, 162, 183)'
+         btn.style.cursor = 'default'
+         isClickable=false;
+      }, 2000);
+
+      btn.addEventListener('click', () => {
+         if (isClickable) {
+            btn.innerHTML = "Pradhan g"
+            clearTimeout(timeOut)
+         }
+      })
+
+
+
+   </script>
+</body>
+
+</html>
