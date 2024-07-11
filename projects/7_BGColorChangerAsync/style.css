@@ -1,24 +1,46 @@
-.box{
+.box {
     width: 35%;
     margin: 20px auto;
     background-color: aliceblue;
-   padding: 30px;
-   border-radius: 5px;
-   box-sizing: border-box;
-   overflow: hidden;
-   text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
 }
-h2{
+
+
+h2 {
     font-family: sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
 }
-button{
+
+button {
     margin: 10px;
     padding: 10px;
+    border: none;
     border-radius: 5px;
-    background-color: blue;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
+    transform: skewX(15deg);
 }
+
+#start{
+    background-color: rgb(46, 125, 46);
+}
+
+#stop{
+    background-color: rgb(198, 46, 46);
+}
+
+
+button:hover{
+    color: black;
+    transform: skewY(1deg);
+    transition: transform 0.3s ease-in-out;
+    /* transition: color 0.1s ease-in-out 0.1s; */
+}
+
+
+
