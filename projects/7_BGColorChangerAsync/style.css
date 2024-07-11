@@ -1,0 +1,24 @@
+.box{
+    width: 35%;
+    margin: 20px auto;
+    background-color: aliceblue;
+   padding: 30px;
+   border-radius: 5px;
+   box-sizing: border-box;
+   overflow: hidden;
+   text-align: center;
+}
+h2{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
