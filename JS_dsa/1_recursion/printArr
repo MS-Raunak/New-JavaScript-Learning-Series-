@@ -1,0 +1,9 @@
+//print arr using recursion
+function printArr(arr,idx){
+    if(idx == arr.length) return;
+
+   console.log(arr[idx]);
+   printArr(arr, idx+1);
+}
+
+printArr([1,2,3,4,5], 0);
